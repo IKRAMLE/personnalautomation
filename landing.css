@@ -14,9 +14,10 @@ body {
 }
 
 .container {
+    background-image: url("");
     width: 80%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(21, 16, 81, 0.842);
     border-radius: 40px;
     overflow: hidden;
     padding: 20px;
@@ -47,11 +48,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(9, 7, 7);
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-   
+
 }
 
 nav ul li a:hover {
@@ -85,9 +86,8 @@ nav ul li a:hover {
     letter-spacing: 1px;
     padding-bottom: 100px;
 }
-
-img {
-    padding-left: 70px;
-    width: 100%;
-    height: 100%; 
+.image img{
+  padding: 10px;
+  margin-top: -120px;
+  margin-right: -100px;
 }
