@@ -5,21 +5,22 @@
 }
 
 body {
-    border: 20px solid blueviolet;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    width: 100%;
+    background: linear-gradient(#111, #222);
+    height: 100vh; 
+    width: 100%;  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
 }
 
 .container {
-    border: 10px solid red;
     width: 80%;
     height: 80%;
     background-color: rgba(21, 16, 81, 0.842);
     border-radius: 40px;
     padding: 20px;
+    
 }
 
 .box-content {
