@@ -10,133 +10,96 @@
 <body>
     <div class="menu">
         <ul>
-            <li class="profile"><h2>IKRAM</h2></li>
+           <h2>MUSTAFA</h2>
             <li>
                 <a href="#">
-                    <i class="fas fa-home"></i>
                     <p>Dashboard</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="fas fa-user-group"></i>
-                    <p>Clients</p>
+                    <p>Add Personnel</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="fas fa-table"></i>
-                    <p>Products</p>
+                    <p>View Personnel</p>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="fas fa-star"></i>
-                    <p>Favorites</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-cog"></i>
                     <p>Settings</p>
                 </a>
             </li>
             <li class="log-out">
                 <a href="#">
-                    <i class="fas fa-sign-out"></i>
                     <p>Log Out</p>
                 </a>
             </li>
         </ul>
     </div>
 
-    <div class="content">
-        <div class="title-info">
-            <p>Dashboard</p>
-            <i class="fas fa-chart-bar"></i>
-        </div>
-        <div class="data-info">
-            <div class="box">
-                <i class="fas fa-user"></i>
-                <div class="data">
-                    <p>Users</p>
-                    <span>100</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-pen"></i>
-                <div class="data">
-                    <p>Posts</p>
-                    <span>30</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-table"></i>
-                <div class="data">
-                    <p>Products</p>
-                    <span>163</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-dollar"></i>
-                <div class="data">
-                    <p>Revenue</p>
-                    <span>$54</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <main class="main">
+        <!-- Add Personnel Form -->
+        <section class="form-section">
+            <h2>Add New Personnel</h2>
+            <form id="add-personnel-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
 
-    <div class="title-info ">
-        <p>Products</p>
-        <i class="fas fa-table"></i>
-    </div>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter surname" required>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Count</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>TV</td>
-                <td><span class="price">100$</span></td>
-                <td><span class="count">45</span></td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td><span class="price">50$</span></td>
-                <td><span class="count">33</span></td>
-            </tr>
-            <tr>
-                <td>Headphones</td>
-                <td><span class="price">30$</span></td>
-                <td><span class="count">12</span></td>
-            </tr>
-            <tr>
-                <td>Washing Machine</td>
-                <td><span class="price">350$</span></td>
-                <td><span class="count">41</span></td>
-            </tr>
-            <tr>
-                <td>Radio</td>
-                <td><span class="price">60$</span></td>
-                <td><span class="count">4</span></td>
-            </tr>
-            <tr>
-                <td>Oven</td>
-                <td><span class="price">90$</span></td>
-                <td><span class="count">90</span></td>
-            </tr>
-            <tr>
-                <td>Powerbank</td>
-                <td><span class="price">10$</span></td>
-                <td><span class="count">130</span></td>
-            </tr>
-        </tbody>
-    </table>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter age" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" placeholder="Enter department" required>
+
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" name="salary" placeholder="Enter salary" required>
+
+                <button type="submit" class="btn">Add Personnel</button>
+            </form>
+        </section>
+
+        <!-- View Personnel Table -->
+        <section class="table-section">
+            <h2>Personnel List</h2>
+            <table class="personnel-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Data -->
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>30</td>
+                        <td>HR</td>
+                        <td>$3000</td>
+                        <td>
+                            <button class="btn btn-edit">Edit</button>
+                            <button class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer >
+        <div class="footer">
+        <p>© 2024 Admin Dashboard - All Rights Reserved.</p>
+    </div>
+    </footer>
 </body>
 </html>
