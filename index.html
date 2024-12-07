@@ -44,22 +44,23 @@
         <section class="form-section">
             <h2>Add New Personnel</h2>
             <form id="add-personnel-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter name" required>
+                <label for="name">Customer Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Customer Name" required>
 
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" placeholder="Enter surname" required>
+                <label for="surname">Product</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter Product" required>
 
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Enter age" required>
+                <label for="department">Quantity</label>
+                <input type="number" id="age" name="age" placeholder="Enter Quantity" required>
 
-                <label for="department">Department:</label>
-                <input type="text" id="department" name="department" placeholder="Enter department" required>
 
-                <label for="salary">Salary:</label>
-                <input type="number" id="salary" name="salary" placeholder="Enter salary" required>
+                <label for="age">Brand</label>
+                <input type="text" id="department" name="department" placeholder="Enter Brand" required>
+               
+                <label for="salary">Total Price</label>
+                <input type="number" id="salary" name="salary" placeholder="Enter Total Price" required>
 
-                <button type="submit" class="btn">Add Personnel</button>
+                <button type="submit" class="btn">Add Order</button>
             </form>
         </section>
 
@@ -69,12 +70,12 @@
             <table class="personnel-table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Surname</th>
-                        <th>Age</th>
-                        <th>Department</th>
-                        <th>Salary</th>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Brand</th>
+                        <th>Total Price</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -82,11 +83,11 @@
                     <!-- Example Data -->
                     <tr>
                         <td>1</td>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>30</td>
-                        <td>HR</td>
-                        <td>$3000</td>
+                        <td>Mustafa summaq</td>
+                        <td>Tv</td>
+                        <td>120</td>
+                        <td>samsung</td>
+                        <td>$600</td>
                         <td>
                             <button class="btn btn-edit">Edit</button>
                             <button class="btn btn-delete">Delete</button>
@@ -98,8 +99,8 @@
     </main>
     <footer >
         <div class="footer">
-        <p>© 2024 Admin Dashboard - All Rights Reserved.</p>
-    </div>
+        <p>© 2024 Mustafa's Dashboard - All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
